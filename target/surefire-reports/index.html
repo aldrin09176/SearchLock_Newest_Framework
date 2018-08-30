@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Regression_Testing">
+              <span class="suite-name border-passed">Regression Testing</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Regression_Testing">
+                    <span>C:\Users\Asy\eclipse-workspace\Hybrid_Win_GC_SearchLock_v105\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Regression_Testing">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Regression_Testing">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Regression_Testing">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Regression_Testing">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Regression_Testing">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Regression_Testing">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Regression_Testing" class="hide-methods passed suite-Regression_Testing"> (hide)</a> <!-- hide-methods passed suite-Regression_Testing -->
+                      <a href="#" panel-name="suite-Regression_Testing" class="show-methods passed suite-Regression_Testing"> (show)</a> <!-- show-methods passed suite-Regression_Testing -->
+                    </span>
+                    <div class="method-list-content passed suite-Regression_Testing">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Testing" title="testRepository.Bing_LockIcon_SafeSites" hash-for-method="SafeList_Bing_Explore">SafeList_Bing_Explore</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Testing" title="testRepository.Bing_LockIcon_SafeSites" hash-for-method="SafeList_Bing_Fun">SafeList_Bing_Fun</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Testing" title="testRepository.Bing_LockIcon_SafeSites" hash-for-method="SafeList_Bing_HomePage">SafeList_Bing_HomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Testing" title="testRepository.Bing_LockIcon_SafeSites" hash-for-method="SafeList_Bing_Images">SafeList_Bing_Images</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Testing" title="testRepository.Bing_LockIcon_SafeSites" hash-for-method="SafeList_Bing_Videos">SafeList_Bing_Videos</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Testing" title="testRepository.Google_LockIcon_SafeSites" hash-for-method="SafeList_Google_HomePage">SafeList_Google_HomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Testing" title="testRepository.Google_LockIcon_SafeSites" hash-for-method="SafeList_Google_Images">SafeList_Google_Images</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Testing" title="testRepository.Google_LockIcon_SafeSites" hash-for-method="SafeList_Google_ImagesLink">SafeList_Google_ImagesLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Testing" title="testRepository.Google_LockIcon_SafeSites" hash-for-method="SafeList_Google_Shopping">SafeList_Google_Shopping</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Regression_Testing" title="testRepository.Google_LockIcon_SafeSites" hash-for-method="SafeList_Google_Videos">SafeList_Google_Videos</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Regression_Testing -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Regression_Testing" class="panel Regression_Testing">
+          <div class="suite-Regression_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testRepository.Bing_LockIcon_SafeSites</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SafeList_Bing_Explore">
+                  </a> <!-- SafeList_Bing_Explore -->
+                  <span class="method-name">SafeList_Bing_Explore</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SafeList_Bing_Fun">
+                  </a> <!-- SafeList_Bing_Fun -->
+                  <span class="method-name">SafeList_Bing_Fun</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SafeList_Bing_HomePage">
+                  </a> <!-- SafeList_Bing_HomePage -->
+                  <span class="method-name">SafeList_Bing_HomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SafeList_Bing_Images">
+                  </a> <!-- SafeList_Bing_Images -->
+                  <span class="method-name">SafeList_Bing_Images</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SafeList_Bing_Videos">
+                  </a> <!-- SafeList_Bing_Videos -->
+                  <span class="method-name">SafeList_Bing_Videos</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Testing-class-passed -->
+          <div class="suite-Regression_Testing-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testRepository.Google_LockIcon_SafeSites</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SafeList_Google_HomePage">
+                  </a> <!-- SafeList_Google_HomePage -->
+                  <span class="method-name">SafeList_Google_HomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SafeList_Google_Images">
+                  </a> <!-- SafeList_Google_Images -->
+                  <span class="method-name">SafeList_Google_Images</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SafeList_Google_ImagesLink">
+                  </a> <!-- SafeList_Google_ImagesLink -->
+                  <span class="method-name">SafeList_Google_ImagesLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SafeList_Google_Shopping">
+                  </a> <!-- SafeList_Google_Shopping -->
+                  <span class="method-name">SafeList_Google_Shopping</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SafeList_Google_Videos">
+                  </a> <!-- SafeList_Google_Videos -->
+                  <span class="method-name">SafeList_Google_Videos</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Regression_Testing-class-passed -->
+        </div> <!-- panel Regression_Testing -->
+        <div panel-name="test-xml-Regression_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\Asy\eclipse-workspace\Hybrid_Win_GC_SearchLock_v105\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Regression Testing&quot;&gt;
+  &lt;test name=&quot;SearchLock Safelist Google&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testRepository.Google_LockIcon_SafeSites&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SearchLock Safelist Google --&gt;
+  &lt;test name=&quot;SearchLock Safelist Bing&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testRepository.Bing_LockIcon_SafeSites&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- SearchLock Safelist Bing --&gt;
+&lt;/suite&gt; &lt;!-- Regression Testing --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Regression_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Regression Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">SearchLock Safelist Google (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">SearchLock Safelist Bing (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Regression_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Regression Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Regression_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Regression Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Regression_Testing');
+function tableData_Regression_Testing() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'SafeList_Google_HomePage')
+data.setCell(0, 2, 'testRepository.Google_LockIcon_SafeSites')
+data.setCell(0, 3, 73612);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'SafeList_Google_Images')
+data.setCell(1, 2, 'testRepository.Google_LockIcon_SafeSites')
+data.setCell(1, 3, 41717);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SafeList_Google_ImagesLink')
+data.setCell(2, 2, 'testRepository.Google_LockIcon_SafeSites')
+data.setCell(2, 3, 39064);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'SafeList_Bing_Fun')
+data.setCell(3, 2, 'testRepository.Bing_LockIcon_SafeSites')
+data.setCell(3, 3, 37664);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'SafeList_Bing_HomePage')
+data.setCell(4, 2, 'testRepository.Bing_LockIcon_SafeSites')
+data.setCell(4, 3, 37331);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'SafeList_Bing_Explore')
+data.setCell(5, 2, 'testRepository.Bing_LockIcon_SafeSites')
+data.setCell(5, 3, 34534);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'SafeList_Google_Shopping')
+data.setCell(6, 2, 'testRepository.Google_LockIcon_SafeSites')
+data.setCell(6, 3, 33229);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'SafeList_Google_Videos')
+data.setCell(7, 2, 'testRepository.Google_LockIcon_SafeSites')
+data.setCell(7, 3, 32062);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'SafeList_Bing_Videos')
+data.setCell(8, 2, 'testRepository.Bing_LockIcon_SafeSites')
+data.setCell(8, 3, 30340);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'SafeList_Bing_Images')
+data.setCell(9, 2, 'testRepository.Bing_LockIcon_SafeSites')
+data.setCell(9, 3, 25773);
+window.suiteTableData['Regression_Testing']= { tableData: data, tableDiv: 'times-div-Regression_Testing'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-Regression_Testing">
+              </div> <!-- times-div-Regression_Testing -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Regression_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Regression Testing</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Regression_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Regression_Testing" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testRepository.Google_LockIcon_SafeSites</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SafeList_Google_HomePage</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SafeList_Google_Images</span>
+                <span class="method-start">73614 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SafeList_Google_ImagesLink</span>
+                <span class="method-start">115332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SafeList_Google_Videos</span>
+                <span class="method-start">154396 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SafeList_Google_Shopping</span>
+                <span class="method-start">186459 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testRepository.Bing_LockIcon_SafeSites</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SafeList_Bing_HomePage</span>
+                <span class="method-start">219740 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SafeList_Bing_Images</span>
+                <span class="method-start">257071 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SafeList_Bing_Videos</span>
+                <span class="method-start">282846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SafeList_Bing_Explore</span>
+                <span class="method-start">313186 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SafeList_Bing_Fun</span>
+                <span class="method-start">347720 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

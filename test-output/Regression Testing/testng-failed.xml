@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Regression Testing]">
+  <test name="TestCase1(failed)">
+    <classes>
+      <class name="testRepository.TestCase2">
+        <methods>
+          <include name="initializeData"/>
+          <include name="executeScript"/>
+        </methods>
+      </class> <!-- testRepository.TestCase2 -->
+    </classes>
+  </test> <!-- TestCase1(failed) -->
+</suite> <!-- Failed suite [Regression Testing] -->

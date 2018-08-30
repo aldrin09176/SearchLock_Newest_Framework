@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression Testing]">
+  <test name="SearchLock Safelist Google(failed)">
+    <classes>
+      <class name="testRepository.Google_LockIcon_SafeSites">
+        <methods>
+          <include name="SafeList_Google_Images"/>
+          <include name="SafeList_Google_Shopping"/>
+          <include name="SafeList_Google_HomePage"/>
+          <include name="SafeList_Google_ImagesLink"/>
+          <include name="SafeList_Google_Videos"/>
+        </methods>
+      </class> <!-- testRepository.Google_LockIcon_SafeSites -->
+    </classes>
+  </test> <!-- SearchLock Safelist Google(failed) -->
+  <test name="SearchLock Safelist Bing(failed)">
+    <classes>
+      <class name="testRepository.Bing_LockIcon_SafeSites">
+        <methods>
+          <include name="SafeList_Bing_Explore"/>
+          <include name="SafeList_Bing_HomePage"/>
+          <include name="SafeList_Bing_Videos"/>
+          <include name="SafeList_Bing_Fun"/>
+          <include name="SafeList_Bing_Images"/>
+        </methods>
+      </class> <!-- testRepository.Bing_LockIcon_SafeSites -->
+    </classes>
+  </test> <!-- SearchLock Safelist Bing(failed) -->
+</suite> <!-- Failed suite [Regression Testing] -->

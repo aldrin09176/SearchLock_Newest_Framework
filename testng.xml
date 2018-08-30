@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Testing" configfailurepolicy="continue">
+
+
+	  <test name="SearchLock Safelist Google">
+	    <classes>
+	  	  <class name="testRepository.Google_LockIcon_SafeSites"/> 
+	   
+	    </classes>
+	</test>
+	
+	 <test name="SearchLock Safelist Bing">
+	    <classes>
+    	   <class name="testRepository.Bing_LockIcon_SafeSites"/>  
+	    </classes>
+	</test> 
+	
+	
+	
+	
+</suite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="42733" started-at="2018-08-30T08:24:31Z" finished-at="2018-08-30T08:25:14Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="42733" started-at="2018-08-30T08:24:31Z" finished-at="2018-08-30T08:25:14Z">
+      <class name="testRepository.MyWay_LockIcon_SafeSites">
+        <test-method status="PASS" signature="SafeList_MyWay_HomePage()[pri:1, instance:testRepository.MyWay_LockIcon_SafeSites@36804139]" name="SafeList_MyWay_HomePage" duration-ms="42668" started-at="2018-08-30T16:24:31Z" finished-at="2018-08-30T16:25:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SafeList_MyWay_HomePage -->
+      </class> <!-- testRepository.MyWay_LockIcon_SafeSites -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
