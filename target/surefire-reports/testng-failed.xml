@@ -1,30 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression Testing]">
-  <test name="SearchLock Safelist Google(failed)">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Regression Testing]" parallel="tests">
+  <test name="Searchlock Serp TestCases v1.0.5(failed)" parallel="tests">
+    <parameter name="myBrowser" value="prod_automation_searchlock_for_chrome_v1.0.5.crx"/>
     <classes>
+      <class name="testRepository.Msn_LockIcon_SafeSites">
+        <methods>
+          <include name="exitWebDriver"/>
+          <include name="SafeList_Msn_Autos"/>
+          <include name="initializeWebBrowser"/>
+          <include name="SafeList_Msn_Videos"/>
+        </methods>
+      </class> <!-- testRepository.Msn_LockIcon_SafeSites -->
+    </classes>
+  </test> <!-- Searchlock Serp TestCases v1.0.5(failed) -->
+  <test name="Searchlock Serp TestCases v1.0.4 France(failed)" parallel="tests">
+    <parameter name="myBrowser" value="prod_automation_searchlock_france_v1.0.4.crx"/>
+    <classes>
+      <class name="testRepository.Msn_LockIcon_SafeSites">
+        <methods>
+          <include name="exitWebDriver"/>
+          <include name="SafeList_Msn_Sports"/>
+          <include name="SafeList_Msn_Health"/>
+          <include name="SafeList_Msn_News"/>
+          <include name="SafeList_Msn_Autos"/>
+          <include name="SafeList_Msn_HomePage"/>
+          <include name="SafeList_Msn_Entertainment"/>
+          <include name="SafeList_Msn_Videos"/>
+          <include name="SafeList_Msn_Food"/>
+          <include name="SafeList_Msn_LifeStyle"/>
+          <include name="SafeList_Msn_Money"/>
+          <include name="SafeList_Msn_Travel"/>
+          <include name="SafeList_Msn_Weather"/>
+          <include name="initializeWebBrowser"/>
+        </methods>
+      </class> <!-- testRepository.Msn_LockIcon_SafeSites -->
+      <class name="testRepository.Ask_LockIcon_SafeSites">
+        <methods>
+          <include name="SafeList_Ask_Video"/>
+          <include name="exitWebDriver"/>
+          <include name="SafeList_Ask_HomePage"/>
+          <include name="initializeWebBrowser"/>
+        </methods>
+      </class> <!-- testRepository.Ask_LockIcon_SafeSites -->
+      <class name="testRepository.MyWebSearch_LockIcon_SafeSites">
+        <methods>
+          <include name="SafeList_MyWeb_HomePage"/>
+          <include name="exitWebDriver"/>
+          <include name="initializeWebBrowser"/>
+        </methods>
+      </class> <!-- testRepository.MyWebSearch_LockIcon_SafeSites -->
+      <class name="testRepository.MyWay_LockIcon_SafeSites">
+        <methods>
+          <include name="exitWebDriver"/>
+          <include name="initializeWebBrowser"/>
+          <include name="SafeList_MyWay_HomePage"/>
+        </methods>
+      </class> <!-- testRepository.MyWay_LockIcon_SafeSites -->
       <class name="testRepository.Google_LockIcon_SafeSites">
         <methods>
+          <include name="exitWebDriver"/>
           <include name="SafeList_Google_Images"/>
           <include name="SafeList_Google_Shopping"/>
           <include name="SafeList_Google_HomePage"/>
+          <include name="initializeWebBrowser"/>
           <include name="SafeList_Google_ImagesLink"/>
           <include name="SafeList_Google_Videos"/>
         </methods>
       </class> <!-- testRepository.Google_LockIcon_SafeSites -->
-    </classes>
-  </test> <!-- SearchLock Safelist Google(failed) -->
-  <test name="SearchLock Safelist Bing(failed)">
-    <classes>
       <class name="testRepository.Bing_LockIcon_SafeSites">
         <methods>
           <include name="SafeList_Bing_Explore"/>
+          <include name="exitWebDriver"/>
           <include name="SafeList_Bing_HomePage"/>
           <include name="SafeList_Bing_Videos"/>
           <include name="SafeList_Bing_Fun"/>
+          <include name="initializeWebBrowser"/>
           <include name="SafeList_Bing_Images"/>
         </methods>
       </class> <!-- testRepository.Bing_LockIcon_SafeSites -->
+      <class name="testRepository.Wow_LockIcon_SafeSites">
+        <methods>
+          <include name="exitWebDriver"/>
+          <include name="SafeList_WOW_HomePage"/>
+          <include name="initializeWebBrowser"/>
+        </methods>
+      </class> <!-- testRepository.Wow_LockIcon_SafeSites -->
     </classes>
-  </test> <!-- SearchLock Safelist Bing(failed) -->
+  </test> <!-- Searchlock Serp TestCases v1.0.4 France(failed) -->
+  <test name="Searchlock Serp TestCases v1.0.4 India(failed)" parallel="tests">
+    <parameter name="myBrowser" value="prod_automation_searchlock_india_v1.0.4.crx"/>
+    <classes>
+      <class name="testRepository.Msn_LockIcon_SafeSites">
+        <methods>
+          <include name="exitWebDriver"/>
+          <include name="SafeList_Msn_Sports"/>
+          <include name="SafeList_Msn_Health"/>
+          <include name="SafeList_Msn_News"/>
+          <include name="SafeList_Msn_Autos"/>
+          <include name="SafeList_Msn_HomePage"/>
+          <include name="SafeList_Msn_Entertainment"/>
+          <include name="SafeList_Msn_Videos"/>
+          <include name="SafeList_Msn_Food"/>
+          <include name="SafeList_Msn_LifeStyle"/>
+          <include name="SafeList_Msn_Money"/>
+          <include name="SafeList_Msn_Travel"/>
+          <include name="SafeList_Msn_Weather"/>
+          <include name="initializeWebBrowser"/>
+        </methods>
+      </class> <!-- testRepository.Msn_LockIcon_SafeSites -->
+      <class name="testRepository.Ask_LockIcon_SafeSites">
+        <methods>
+          <include name="SafeList_Ask_Video"/>
+          <include name="exitWebDriver"/>
+          <include name="SafeList_Ask_HomePage"/>
+          <include name="initializeWebBrowser"/>
+        </methods>
+      </class> <!-- testRepository.Ask_LockIcon_SafeSites -->
+      <class name="testRepository.MyWebSearch_LockIcon_SafeSites">
+        <methods>
+          <include name="SafeList_MyWeb_HomePage"/>
+          <include name="exitWebDriver"/>
+          <include name="initializeWebBrowser"/>
+        </methods>
+      </class> <!-- testRepository.MyWebSearch_LockIcon_SafeSites -->
+      <class name="testRepository.MyWay_LockIcon_SafeSites">
+        <methods>
+          <include name="exitWebDriver"/>
+          <include name="initializeWebBrowser"/>
+          <include name="SafeList_MyWay_HomePage"/>
+        </methods>
+      </class> <!-- testRepository.MyWay_LockIcon_SafeSites -->
+      <class name="testRepository.Google_LockIcon_SafeSites">
+        <methods>
+          <include name="exitWebDriver"/>
+          <include name="SafeList_Google_Images"/>
+          <include name="SafeList_Google_Shopping"/>
+          <include name="SafeList_Google_HomePage"/>
+          <include name="initializeWebBrowser"/>
+          <include name="SafeList_Google_ImagesLink"/>
+          <include name="SafeList_Google_Videos"/>
+        </methods>
+      </class> <!-- testRepository.Google_LockIcon_SafeSites -->
+      <class name="testRepository.Bing_LockIcon_SafeSites">
+        <methods>
+          <include name="SafeList_Bing_Explore"/>
+          <include name="exitWebDriver"/>
+          <include name="SafeList_Bing_HomePage"/>
+          <include name="SafeList_Bing_Videos"/>
+          <include name="SafeList_Bing_Fun"/>
+          <include name="initializeWebBrowser"/>
+          <include name="SafeList_Bing_Images"/>
+        </methods>
+      </class> <!-- testRepository.Bing_LockIcon_SafeSites -->
+      <class name="testRepository.Wow_LockIcon_SafeSites">
+        <methods>
+          <include name="exitWebDriver"/>
+          <include name="SafeList_WOW_HomePage"/>
+          <include name="initializeWebBrowser"/>
+        </methods>
+      </class> <!-- testRepository.Wow_LockIcon_SafeSites -->
+    </classes>
+  </test> <!-- Searchlock Serp TestCases v1.0.4 India(failed) -->
 </suite> <!-- Failed suite [Regression Testing] -->

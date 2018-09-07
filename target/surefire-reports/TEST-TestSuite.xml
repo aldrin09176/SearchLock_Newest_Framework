@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="385.319" tests="10" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="6,758.303" tests="180" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
@@ -26,7 +26,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\Asy\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4719878732583059045.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\Asy\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf7447567475324023820.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Program Files/Java/jre1.8.0_161/bin/server;C:/Program Files/Java/jre1.8.0_161/bin;C:/Program Files/Java/jre1.8.0_161/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\apache-maven-3.5.0\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files (x86)\HPE\LoadRunner\strawberry-perl\perl\bin;C:\Users\Asy\AppData\Local\Microsoft\WindowsApps;C:\Users\Asy\AppData\Roaming\npm;C:\Users\Asy\Desktop;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,14 +60,196 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="SafeList_Google_HomePage" classname="testRepository.Google_LockIcon_SafeSites" time="73.613"/>
-  <testcase name="SafeList_Google_Images" classname="testRepository.Google_LockIcon_SafeSites" time="41.717"/>
-  <testcase name="SafeList_Google_ImagesLink" classname="testRepository.Google_LockIcon_SafeSites" time="39.064"/>
-  <testcase name="SafeList_Google_Videos" classname="testRepository.Google_LockIcon_SafeSites" time="32.061"/>
-  <testcase name="SafeList_Google_Shopping" classname="testRepository.Google_LockIcon_SafeSites" time="33.229"/>
-  <testcase name="SafeList_Bing_HomePage" classname="testRepository.Bing_LockIcon_SafeSites" time="37.331"/>
-  <testcase name="SafeList_Bing_Images" classname="testRepository.Bing_LockIcon_SafeSites" time="25.773"/>
-  <testcase name="SafeList_Bing_Videos" classname="testRepository.Bing_LockIcon_SafeSites" time="30.335"/>
-  <testcase name="SafeList_Bing_Explore" classname="testRepository.Bing_LockIcon_SafeSites" time="34.534"/>
-  <testcase name="SafeList_Bing_Fun" classname="testRepository.Bing_LockIcon_SafeSites" time="37.662"/>
+  <testcase name="SafeList_Google_HomePage" classname="testRepository.Google_LockIcon_SafeSites" time="73.091"/>
+  <testcase name="SafeList_Google_Images" classname="testRepository.Google_LockIcon_SafeSites" time="41.753"/>
+  <testcase name="SafeList_Google_ImagesLink" classname="testRepository.Google_LockIcon_SafeSites" time="35.03"/>
+  <testcase name="SafeList_Google_Videos" classname="testRepository.Google_LockIcon_SafeSites" time="33.208"/>
+  <testcase name="SafeList_Google_Shopping" classname="testRepository.Google_LockIcon_SafeSites" time="30.951"/>
+  <testcase name="SafeList_Bing_HomePage" classname="testRepository.Bing_LockIcon_SafeSites" time="35.746"/>
+  <testcase name="SafeList_Bing_Images" classname="testRepository.Bing_LockIcon_SafeSites" time="25.323"/>
+  <testcase name="SafeList_Bing_Videos" classname="testRepository.Bing_LockIcon_SafeSites" time="22.034"/>
+  <testcase name="SafeList_Bing_Fun" classname="testRepository.Bing_LockIcon_SafeSites" time="25.659"/>
+  <testcase name="SafeList_Ask_HomePage" classname="testRepository.Ask_LockIcon_SafeSites" time="36.123"/>
+  <testcase name="SafeList_Ask_Video" classname="testRepository.Ask_LockIcon_SafeSites" time="29.628"/>
+  <testcase name="SafeList_MyWay_HomePage" classname="testRepository.MyWay_LockIcon_SafeSites" time="36.406"/>
+  <testcase name="SafeList_MyWeb_HomePage" classname="testRepository.MyWebSearch_LockIcon_SafeSites" time="41.296"/>
+  <testcase name="SafeList_Msn_HomePage" classname="testRepository.Msn_LockIcon_SafeSites" time="52.975"/>
+  <testcase name="SafeList_Msn_Weather" classname="testRepository.Msn_LockIcon_SafeSites" time="30.637"/>
+  <testcase name="SafeList_Msn_News" classname="testRepository.Msn_LockIcon_SafeSites" time="43.361"/>
+  <testcase name="SafeList_Msn_Entertainment" classname="testRepository.Msn_LockIcon_SafeSites" time="38.03"/>
+  <testcase name="SafeList_Msn_Sports" classname="testRepository.Msn_LockIcon_SafeSites" time="42.982"/>
+  <testcase name="SafeList_Msn_Money" classname="testRepository.Msn_LockIcon_SafeSites" time="39.781"/>
+  <testcase name="SafeList_Msn_LifeStyle" classname="testRepository.Msn_LockIcon_SafeSites" time="37.525"/>
+  <testcase name="SafeList_Msn_Health" classname="testRepository.Msn_LockIcon_SafeSites" time="34.368"/>
+  <testcase name="SafeList_Msn_Food" classname="testRepository.Msn_LockIcon_SafeSites" time="41.86"/>
+  <testcase name="SafeList_Msn_Travel" classname="testRepository.Msn_LockIcon_SafeSites" time="44.08"/>
+  <testcase name="SafeList_Msn_Autos" classname="testRepository.Msn_LockIcon_SafeSites" time="58.442"/>
+  <testcase name="SafeList_Msn_Videos" classname="testRepository.Msn_LockIcon_SafeSites" time="37.751"/>
+  <testcase name="SafeList_Google_HomePage" classname="testRepository.Google_LockIcon_SafeSites" time="72.91"/>
+  <testcase name="SafeList_Google_Images" classname="testRepository.Google_LockIcon_SafeSites" time="38.536"/>
+  <testcase name="SafeList_Google_ImagesLink" classname="testRepository.Google_LockIcon_SafeSites" time="32.217"/>
+  <testcase name="SafeList_Google_Videos" classname="testRepository.Google_LockIcon_SafeSites" time="32.267"/>
+  <testcase name="SafeList_Google_Shopping" classname="testRepository.Google_LockIcon_SafeSites" time="32.41"/>
+  <testcase name="SafeList_Bing_HomePage" classname="testRepository.Bing_LockIcon_SafeSites" time="34.601"/>
+  <testcase name="SafeList_Bing_Images" classname="testRepository.Bing_LockIcon_SafeSites" time="26.029"/>
+  <testcase name="SafeList_Bing_Videos" classname="testRepository.Bing_LockIcon_SafeSites" time="21.955"/>
+  <testcase name="SafeList_Bing_Fun" classname="testRepository.Bing_LockIcon_SafeSites" time="25.706"/>
+  <testcase name="SafeList_Ask_HomePage" classname="testRepository.Ask_LockIcon_SafeSites" time="33.897"/>
+  <testcase name="SafeList_Ask_Video" classname="testRepository.Ask_LockIcon_SafeSites" time="31.764"/>
+  <testcase name="SafeList_MyWay_HomePage" classname="testRepository.MyWay_LockIcon_SafeSites" time="35.742"/>
+  <testcase name="SafeList_MyWeb_HomePage" classname="testRepository.MyWebSearch_LockIcon_SafeSites" time="34.582"/>
+  <testcase name="SafeList_Msn_HomePage" classname="testRepository.Msn_LockIcon_SafeSites" time="54.342"/>
+  <testcase name="SafeList_Msn_Weather" classname="testRepository.Msn_LockIcon_SafeSites" time="30.577"/>
+  <testcase name="SafeList_Msn_News" classname="testRepository.Msn_LockIcon_SafeSites" time="44.898"/>
+  <testcase name="SafeList_Msn_Entertainment" classname="testRepository.Msn_LockIcon_SafeSites" time="38.943"/>
+  <testcase name="SafeList_Msn_Sports" classname="testRepository.Msn_LockIcon_SafeSites" time="43.977"/>
+  <testcase name="SafeList_Msn_Money" classname="testRepository.Msn_LockIcon_SafeSites" time="45.366"/>
+  <testcase name="SafeList_Msn_LifeStyle" classname="testRepository.Msn_LockIcon_SafeSites" time="42.445"/>
+  <testcase name="SafeList_Msn_Health" classname="testRepository.Msn_LockIcon_SafeSites" time="31.509"/>
+  <testcase name="SafeList_Msn_Food" classname="testRepository.Msn_LockIcon_SafeSites" time="38.571"/>
+  <testcase name="SafeList_Msn_Travel" classname="testRepository.Msn_LockIcon_SafeSites" time="39.444"/>
+  <testcase name="SafeList_Msn_Autos" classname="testRepository.Msn_LockIcon_SafeSites" time="37.9"/>
+  <testcase name="SafeList_Msn_Videos" classname="testRepository.Msn_LockIcon_SafeSites" time="35.115"/>
+  <testcase name="SafeList_Google_HomePage" classname="testRepository.Google_LockIcon_SafeSites" time="72.379"/>
+  <testcase name="SafeList_Google_Images" classname="testRepository.Google_LockIcon_SafeSites" time="40.493"/>
+  <testcase name="SafeList_Google_ImagesLink" classname="testRepository.Google_LockIcon_SafeSites" time="34.016"/>
+  <testcase name="SafeList_Google_Videos" classname="testRepository.Google_LockIcon_SafeSites" time="31.525"/>
+  <testcase name="SafeList_Google_Shopping" classname="testRepository.Google_LockIcon_SafeSites" time="31.721"/>
+  <testcase name="SafeList_Bing_HomePage" classname="testRepository.Bing_LockIcon_SafeSites" time="36.735"/>
+  <testcase name="SafeList_Bing_Images" classname="testRepository.Bing_LockIcon_SafeSites" time="23.682"/>
+  <testcase name="SafeList_Bing_Videos" classname="testRepository.Bing_LockIcon_SafeSites" time="21.978"/>
+  <testcase name="SafeList_Bing_Fun" classname="testRepository.Bing_LockIcon_SafeSites" time="22.88"/>
+  <testcase name="SafeList_Ask_HomePage" classname="testRepository.Ask_LockIcon_SafeSites" time="34.879"/>
+  <testcase name="SafeList_Ask_Video" classname="testRepository.Ask_LockIcon_SafeSites" time="29.965"/>
+  <testcase name="SafeList_MyWay_HomePage" classname="testRepository.MyWay_LockIcon_SafeSites" time="36.494"/>
+  <testcase name="SafeList_MyWeb_HomePage" classname="testRepository.MyWebSearch_LockIcon_SafeSites" time="35.272"/>
+  <testcase name="SafeList_WOW_HomePage" classname="testRepository.Wow_LockIcon_SafeSites" time="37.82"/>
+  <testcase name="SafeList_Msn_HomePage" classname="testRepository.Msn_LockIcon_SafeSites" time="53.524"/>
+  <testcase name="SafeList_Msn_Weather" classname="testRepository.Msn_LockIcon_SafeSites" time="30.125"/>
+  <testcase name="SafeList_Msn_News" classname="testRepository.Msn_LockIcon_SafeSites" time="36.878"/>
+  <testcase name="SafeList_Msn_Entertainment" classname="testRepository.Msn_LockIcon_SafeSites" time="31.902"/>
+  <testcase name="SafeList_Msn_Sports" classname="testRepository.Msn_LockIcon_SafeSites" time="50.981"/>
+  <testcase name="SafeList_Msn_Money" classname="testRepository.Msn_LockIcon_SafeSites" time="41.647"/>
+  <testcase name="SafeList_Msn_LifeStyle" classname="testRepository.Msn_LockIcon_SafeSites" time="35.521"/>
+  <testcase name="SafeList_Msn_Health" classname="testRepository.Msn_LockIcon_SafeSites" time="33.997"/>
+  <testcase name="SafeList_Msn_Food" classname="testRepository.Msn_LockIcon_SafeSites" time="40.331"/>
+  <testcase name="SafeList_Msn_Travel" classname="testRepository.Msn_LockIcon_SafeSites" time="38.109"/>
+  <testcase name="SafeList_Msn_Autos" classname="testRepository.Msn_LockIcon_SafeSites" time="34.826"/>
+  <testcase name="SafeList_Msn_Videos" classname="testRepository.Msn_LockIcon_SafeSites" time="31.321"/>
+  <testcase name="SafeList_Google_HomePage" classname="testRepository.Google_LockIcon_SafeSites" time="71.264"/>
+  <testcase name="SafeList_Google_Images" classname="testRepository.Google_LockIcon_SafeSites" time="41.234"/>
+  <testcase name="SafeList_Google_ImagesLink" classname="testRepository.Google_LockIcon_SafeSites" time="33.367"/>
+  <testcase name="SafeList_Google_Videos" classname="testRepository.Google_LockIcon_SafeSites" time="33.447"/>
+  <testcase name="SafeList_Google_Shopping" classname="testRepository.Google_LockIcon_SafeSites" time="31.147"/>
+  <testcase name="SafeList_Bing_HomePage" classname="testRepository.Bing_LockIcon_SafeSites" time="34.699"/>
+  <testcase name="SafeList_Bing_Images" classname="testRepository.Bing_LockIcon_SafeSites" time="23.636"/>
+  <testcase name="SafeList_Bing_Videos" classname="testRepository.Bing_LockIcon_SafeSites" time="21.952"/>
+  <testcase name="SafeList_Bing_Fun" classname="testRepository.Bing_LockIcon_SafeSites" time="22.84"/>
+  <testcase name="SafeList_Ask_HomePage" classname="testRepository.Ask_LockIcon_SafeSites" time="38.532"/>
+  <testcase name="SafeList_Ask_Video" classname="testRepository.Ask_LockIcon_SafeSites" time="29.643"/>
+  <testcase name="SafeList_MyWay_HomePage" classname="testRepository.MyWay_LockIcon_SafeSites" time="35.674"/>
+  <testcase name="SafeList_MyWeb_HomePage" classname="testRepository.MyWebSearch_LockIcon_SafeSites" time="34.224"/>
+  <testcase name="SafeList_WOW_HomePage" classname="testRepository.Wow_LockIcon_SafeSites" time="34.769"/>
+  <testcase name="SafeList_Msn_HomePage" classname="testRepository.Msn_LockIcon_SafeSites" time="42.23"/>
+  <testcase name="SafeList_Msn_Weather" classname="testRepository.Msn_LockIcon_SafeSites" time="40.773"/>
+  <testcase name="SafeList_Msn_News" classname="testRepository.Msn_LockIcon_SafeSites" time="44.139"/>
+  <testcase name="SafeList_Msn_Entertainment" classname="testRepository.Msn_LockIcon_SafeSites" time="43.163"/>
+  <testcase name="SafeList_Msn_Sports" classname="testRepository.Msn_LockIcon_SafeSites" time="40.114"/>
+  <testcase name="SafeList_Msn_Money" classname="testRepository.Msn_LockIcon_SafeSites" time="39.178"/>
+  <testcase name="SafeList_Msn_LifeStyle" classname="testRepository.Msn_LockIcon_SafeSites" time="36.726"/>
+  <testcase name="SafeList_Msn_Health" classname="testRepository.Msn_LockIcon_SafeSites" time="36.74"/>
+  <testcase name="SafeList_Msn_Food" classname="testRepository.Msn_LockIcon_SafeSites" time="49.988"/>
+  <testcase name="SafeList_Msn_Travel" classname="testRepository.Msn_LockIcon_SafeSites" time="38.762"/>
+  <testcase name="SafeList_Msn_Autos" classname="testRepository.Msn_LockIcon_SafeSites" time="36.303"/>
+  <testcase name="SafeList_Msn_Videos" classname="testRepository.Msn_LockIcon_SafeSites" time="38.342"/>
+  <testcase name="SafeList_Google_HomePage" classname="testRepository.Google_LockIcon_SafeSites" time="73.673"/>
+  <testcase name="SafeList_Google_Images" classname="testRepository.Google_LockIcon_SafeSites" time="41.062"/>
+  <testcase name="SafeList_Google_ImagesLink" classname="testRepository.Google_LockIcon_SafeSites" time="35.865"/>
+  <testcase name="SafeList_Google_Videos" classname="testRepository.Google_LockIcon_SafeSites" time="33.965"/>
+  <testcase name="SafeList_Google_Shopping" classname="testRepository.Google_LockIcon_SafeSites" time="31.599"/>
+  <testcase name="SafeList_Bing_HomePage" classname="testRepository.Bing_LockIcon_SafeSites" time="38.567"/>
+  <testcase name="SafeList_Bing_Images" classname="testRepository.Bing_LockIcon_SafeSites" time="25.509"/>
+  <testcase name="SafeList_Bing_Videos" classname="testRepository.Bing_LockIcon_SafeSites" time="21.871"/>
+  <testcase name="SafeList_Bing_Fun" classname="testRepository.Bing_LockIcon_SafeSites" time="23.944"/>
+  <testcase name="SafeList_Ask_HomePage" classname="testRepository.Ask_LockIcon_SafeSites" time="35.566"/>
+  <testcase name="SafeList_Ask_Video" classname="testRepository.Ask_LockIcon_SafeSites" time="29.458"/>
+  <testcase name="SafeList_MyWay_HomePage" classname="testRepository.MyWay_LockIcon_SafeSites" time="35.489"/>
+  <testcase name="SafeList_MyWeb_HomePage" classname="testRepository.MyWebSearch_LockIcon_SafeSites" time="35.45"/>
+  <testcase name="SafeList_WOW_HomePage" classname="testRepository.Wow_LockIcon_SafeSites" time="34.45"/>
+  <testcase name="SafeList_Msn_HomePage" classname="testRepository.Msn_LockIcon_SafeSites" time="47.206"/>
+  <testcase name="SafeList_Msn_Weather" classname="testRepository.Msn_LockIcon_SafeSites" time="30.347"/>
+  <testcase name="SafeList_Msn_News" classname="testRepository.Msn_LockIcon_SafeSites" time="40.716"/>
+  <testcase name="SafeList_Msn_Entertainment" classname="testRepository.Msn_LockIcon_SafeSites" time="38.158"/>
+  <testcase name="SafeList_Msn_Sports" classname="testRepository.Msn_LockIcon_SafeSites" time="44.767"/>
+  <testcase name="SafeList_Msn_Money" classname="testRepository.Msn_LockIcon_SafeSites" time="55.296"/>
+  <testcase name="SafeList_Msn_LifeStyle" classname="testRepository.Msn_LockIcon_SafeSites" time="41.646"/>
+  <testcase name="SafeList_Msn_Health" classname="testRepository.Msn_LockIcon_SafeSites" time="34.547"/>
+  <testcase name="SafeList_Msn_Food" classname="testRepository.Msn_LockIcon_SafeSites" time="47.417"/>
+  <testcase name="SafeList_Msn_Travel" classname="testRepository.Msn_LockIcon_SafeSites" time="47.649"/>
+  <testcase name="SafeList_Msn_Autos" classname="testRepository.Msn_LockIcon_SafeSites" time="47.896"/>
+  <testcase name="SafeList_Msn_Videos" classname="testRepository.Msn_LockIcon_SafeSites" time="45.277"/>
+  <testcase name="SafeList_Google_HomePage" classname="testRepository.Google_LockIcon_SafeSites" time="77.572"/>
+  <testcase name="SafeList_Google_Images" classname="testRepository.Google_LockIcon_SafeSites" time="41.299"/>
+  <testcase name="SafeList_Google_ImagesLink" classname="testRepository.Google_LockIcon_SafeSites" time="35.948"/>
+  <testcase name="SafeList_Google_Videos" classname="testRepository.Google_LockIcon_SafeSites" time="32.513"/>
+  <testcase name="SafeList_Google_Shopping" classname="testRepository.Google_LockIcon_SafeSites" time="30.868"/>
+  <testcase name="SafeList_Bing_HomePage" classname="testRepository.Bing_LockIcon_SafeSites" time="35.58"/>
+  <testcase name="SafeList_Bing_Images" classname="testRepository.Bing_LockIcon_SafeSites" time="25.443"/>
+  <testcase name="SafeList_Bing_Videos" classname="testRepository.Bing_LockIcon_SafeSites" time="22.103"/>
+  <testcase name="SafeList_Bing_Fun" classname="testRepository.Bing_LockIcon_SafeSites" time="28.211"/>
+  <testcase name="SafeList_Ask_HomePage" classname="testRepository.Ask_LockIcon_SafeSites" time="34.569"/>
+  <testcase name="SafeList_Ask_Video" classname="testRepository.Ask_LockIcon_SafeSites" time="28.9"/>
+  <testcase name="SafeList_MyWay_HomePage" classname="testRepository.MyWay_LockIcon_SafeSites" time="36.106"/>
+  <testcase name="SafeList_MyWeb_HomePage" classname="testRepository.MyWebSearch_LockIcon_SafeSites" time="34.682"/>
+  <testcase name="SafeList_WOW_HomePage" classname="testRepository.Wow_LockIcon_SafeSites" time="17.949">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.fail(Assert.java:100)
+	at com.Objects.CommonMethods.verifyDisplayed(CommonMethods.java:44)
+	at com.Objects.SafelistObjects.SafeListChromeWebRedirection(SafelistObjects.java:17)
+	at testRepository.Wow_LockIcon_SafeSites.SafeList_WOW_HomePage(Wow_LockIcon_SafeSites.java:22)
+</failure>
+    <system-out><![CDATA[----------------- SafeList_WOW_HomePage -----------------
+]]></system-out>
+    <system-err><![CDATA[FAILED: Element Lock Icon on Search Bar is not displayed!!
+]]></system-err>
+  </testcase>
+  <testcase name="SafeList_Msn_HomePage" classname="testRepository.Msn_LockIcon_SafeSites" time="43.67"/>
+  <testcase name="SafeList_Msn_Weather" classname="testRepository.Msn_LockIcon_SafeSites" time="30.291"/>
+  <testcase name="SafeList_Msn_News" classname="testRepository.Msn_LockIcon_SafeSites" time="37.671"/>
+  <testcase name="SafeList_Msn_Entertainment" classname="testRepository.Msn_LockIcon_SafeSites" time="41.833"/>
+  <testcase name="SafeList_Msn_Sports" classname="testRepository.Msn_LockIcon_SafeSites" time="38.608"/>
+  <testcase name="SafeList_Msn_Money" classname="testRepository.Msn_LockIcon_SafeSites" time="42.18"/>
+  <testcase name="SafeList_Msn_LifeStyle" classname="testRepository.Msn_LockIcon_SafeSites" time="37.016"/>
+  <testcase name="SafeList_Msn_Health" classname="testRepository.Msn_LockIcon_SafeSites" time="30.49"/>
+  <testcase name="SafeList_Msn_Food" classname="testRepository.Msn_LockIcon_SafeSites" time="52.008"/>
+  <testcase name="SafeList_Msn_Travel" classname="testRepository.Msn_LockIcon_SafeSites" time="38.348"/>
+  <testcase name="SafeList_Msn_Autos" classname="testRepository.Msn_LockIcon_SafeSites" time="35.576"/>
+  <testcase name="SafeList_Msn_Videos" classname="testRepository.Msn_LockIcon_SafeSites" time="34.513"/>
+  <testcase name="SafeList_Google_HomePage" classname="testRepository.Google_LockIcon_SafeSites" time="74.64"/>
+  <testcase name="SafeList_Google_Images" classname="testRepository.Google_LockIcon_SafeSites" time="44.867"/>
+  <testcase name="SafeList_Google_ImagesLink" classname="testRepository.Google_LockIcon_SafeSites" time="35.663"/>
+  <testcase name="SafeList_Google_Videos" classname="testRepository.Google_LockIcon_SafeSites" time="32.432"/>
+  <testcase name="SafeList_Google_Shopping" classname="testRepository.Google_LockIcon_SafeSites" time="32.192"/>
+  <testcase name="SafeList_Bing_HomePage" classname="testRepository.Bing_LockIcon_SafeSites" time="37.111"/>
+  <testcase name="SafeList_Bing_Images" classname="testRepository.Bing_LockIcon_SafeSites" time="22.998"/>
+  <testcase name="SafeList_Bing_Videos" classname="testRepository.Bing_LockIcon_SafeSites" time="21.835"/>
+  <testcase name="SafeList_Bing_Fun" classname="testRepository.Bing_LockIcon_SafeSites" time="23.036"/>
+  <testcase name="SafeList_Ask_HomePage" classname="testRepository.Ask_LockIcon_SafeSites" time="34.954"/>
+  <testcase name="SafeList_Ask_Video" classname="testRepository.Ask_LockIcon_SafeSites" time="30.061"/>
+  <testcase name="SafeList_MyWay_HomePage" classname="testRepository.MyWay_LockIcon_SafeSites" time="38.335"/>
+  <testcase name="SafeList_MyWeb_HomePage" classname="testRepository.MyWebSearch_LockIcon_SafeSites" time="34.302"/>
+  <testcase name="SafeList_WOW_HomePage" classname="testRepository.Wow_LockIcon_SafeSites" time="36.428"/>
+  <testcase name="SafeList_Msn_HomePage" classname="testRepository.Msn_LockIcon_SafeSites" time="45.905"/>
+  <testcase name="SafeList_Msn_Weather" classname="testRepository.Msn_LockIcon_SafeSites" time="34.732"/>
+  <testcase name="SafeList_Msn_News" classname="testRepository.Msn_LockIcon_SafeSites" time="38.141"/>
+  <testcase name="SafeList_Msn_Entertainment" classname="testRepository.Msn_LockIcon_SafeSites" time="40.27"/>
+  <testcase name="SafeList_Msn_Sports" classname="testRepository.Msn_LockIcon_SafeSites" time="40.4"/>
+  <testcase name="SafeList_Msn_Money" classname="testRepository.Msn_LockIcon_SafeSites" time="39.129"/>
+  <testcase name="SafeList_Msn_LifeStyle" classname="testRepository.Msn_LockIcon_SafeSites" time="33.542"/>
+  <testcase name="SafeList_Msn_Health" classname="testRepository.Msn_LockIcon_SafeSites" time="37.804"/>
+  <testcase name="SafeList_Msn_Food" classname="testRepository.Msn_LockIcon_SafeSites" time="43.014"/>
+  <testcase name="SafeList_Msn_Travel" classname="testRepository.Msn_LockIcon_SafeSites" time="43.924"/>
+  <testcase name="SafeList_Msn_Autos" classname="testRepository.Msn_LockIcon_SafeSites" time="32.735"/>
+  <testcase name="SafeList_Msn_Videos" classname="testRepository.Msn_LockIcon_SafeSites" time="42.886"/>
 </testsuite>

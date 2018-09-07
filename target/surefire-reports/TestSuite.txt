@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 388.758 sec - in TestSuite
+Tests run: 180, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6,786.695 sec <<< FAILURE! - in TestSuite
+SafeList_WOW_HomePage(testRepository.Wow_LockIcon_SafeSites)  Time elapsed: 17.949 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.fail(Assert.java:100)
+	at com.Objects.CommonMethods.verifyDisplayed(CommonMethods.java:44)
+	at com.Objects.SafelistObjects.SafeListChromeWebRedirection(SafelistObjects.java:17)
+	at testRepository.Wow_LockIcon_SafeSites.SafeList_WOW_HomePage(Wow_LockIcon_SafeSites.java:22)
+

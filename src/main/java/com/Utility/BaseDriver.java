@@ -1,6 +1,8 @@
 package com.Utility;
 
 import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -12,30 +14,34 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxBinary;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
-import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+
+import com.Pages.SearchLockPages;
 
 public class BaseDriver {
-
-	public static WebDriver driver = initializeWebBrowser();
-	private static final int IMPLICIT_TIMEOUT_SECONDS = 3;
-	private static final int EXPLICIT_TIMEOUT_SECONDS = 3;
-	private static final int SEARCH_LIMIT = 5;
+	
+	public static WebDriver driver = null;
+	private final int IMPLICIT_TIMEOUT_SECONDS = 3;
+	private final int EXPLICIT_TIMEOUT_SECONDS = 3;
+	private final int SEARCH_LIMIT = 5;
+	public static String extensionName = "";
 
 	
-	public static WebDriver initializeWebBrowser()
+	@BeforeTest
+	@Parameters("myBrowser")
+	public void initializeWebBrowser(String myExtension) throws Exception
 	{
-		if(ConfigReader.getTestBrowser().equalsIgnoreCase("Chrome"))
-		{
-		    //-------------------Code for Running on the Local Machine----------------------------------
+			extensionName = myExtension;
+			System.out.println("-----------------------------------------Extension Version " + myExtension + " -----------------------------------------");
+//		    //-------------------Code for Running on the Local Machine----------------------------------
 			System.setProperty("webdriver.chrome.driver", ConfigReader.ChromeDriver);
 			ChromeOptions options = new ChromeOptions();
 	        Map<String, Object> prefs = new HashMap<String, Object>();
@@ -46,7 +52,7 @@ public class BaseDriver {
 	        prefs.put("password_manager_enabled", false);
 	        //Below Code is for reading the Google Chrome Profile
 	        //options.addArguments("user-data-dir=C:\\Users\\Asy\\AppData\\Local\\Google\\Chrome\\User Data\\GCTesting\\");
-	        options.addExtensions(new File(ConfigReader.getExtensionName()));
+	        options.addExtensions(new File(System.getProperty("user.dir")+"/src/main/resources/Extension/production/"+myExtension));
 	        options.setExperimentalOption("prefs", prefs);
 	        options.addArguments("--test-type");
 	        //options.addArguments("--lang=us");
@@ -57,7 +63,7 @@ public class BaseDriver {
 	        cap.setCapability(ChromeOptions.CAPABILITY, options);
 	        cap.setCapability(CapabilityType.UNEXPECTED_ALERT_BEHAVIOUR, UnexpectedAlertBehaviour.ACCEPT);
 	        driver = new ChromeDriver(cap);
-
+	        
 	        //-------------------Code for Running on the BrowserStack----------------------------------	
 //			ChromeOptions options = new ChromeOptions();
 //	        Map<String, Object> prefs = new HashMap<String, Object>();
@@ -66,7 +72,7 @@ public class BaseDriver {
 //	        prefs.put("intl.accept_languages", "en-GB");
 //	        prefs.put("credentials_enable_service", false);
 //	        prefs.put("password_manager_enabled", false);
-//	        options.addExtensions(new File(ConfigReader.getExtensionName()));
+//	        options.addExtensions(new File(System.getProperty("user.dir")+"/src/main/resources/Extension/production/"+myExtension));
 //	        options.setExperimentalOption("prefs", prefs);
 //	        options.addArguments("--test-type");
 //	        //options.addArguments("--lang=en");
@@ -82,6 +88,7 @@ public class BaseDriver {
 //	        caps.setCapability("browser", ConfigReader.getTestBrowser());
 //	        caps.setCapability("browser_version", ConfigReader.getTestBrowserVersion());
 //	        caps.setCapability("browserstack.selenium_version", "3.5.2");
+//	        caps.setCapability("browserstack.local", "false");
 //			//Create a URL / Username in BrowserStack = aldrinsy2 / AccessKey in BrowserStack = MEs4wUroYXMMqwpisEgr
 //			String stringUrl = "https://aldrinsy2:MEs4wUroYXMMqwpisEgr@hub-cloud.browserstack.com/wd/hub";
 //			URL serverUrl = null;
@@ -91,56 +98,11 @@ public class BaseDriver {
 //				// TODO Auto-generated catch block
 //				e.printStackTrace();
 //			}
-//			driver = new RemoteWebDriver(serverUrl,caps);     
+//			driver = new RemoteWebDriver(serverUrl,caps); 
+	       
+	    	driver.manage().timeouts().implicitlyWait(IMPLICIT_TIMEOUT_SECONDS,TimeUnit.SECONDS);
+			driver.manage().window().maximize();
 		}
-		else if(ConfigReader.getTestBrowser().equalsIgnoreCase("Firefox"))
-		{
-			//-------------------To install an XPI file on the Firefox Developer Edition Browser (Not working any longer)----------------------------------
-//			//Binary Path. Location of the Firefox Developer Edition
-//			System.setProperty("webdriver.gecko.driver", config.FirefoxDriver);
-//			File pathToBinary = new File("C:\\Program Files\\Firefox Developer Edition\\firefox.exe");
-//			FirefoxBinary ffBinary = new FirefoxBinary(pathToBinary);
-//			//Profile for installing Extension
-//			FirefoxProfile firefoxprofile = new FirefoxProfile();
-//			//Extension Path (.xpi file)
-//			File addonpath = new File(ConfigReader.OldSLExtensionFirefox);
-//			firefoxprofile.addExtension(addonpath);
-//			//Initialize Firefox
-//			driver = new FirefoxDriver(ffBinary,firefoxprofile);
-			
-			//-------------------To install an XPI file on the normal Firefox Browser (Not working any longer)----------------------------------
-//			System.setProperty("webdriver.gecko.driver", config.FirefoxDriver);
-//			FirefoxProfile firefoxprofile = new FirefoxProfile();
-//			File addonpath = new File(ConfigReader.OldSLExtensionFirefox);
-//			firefoxprofile.addExtension(addonpath);
-//			driver = new FirefoxDriver(firefoxprofile);
-			String os = System.getProperty("os.name").toLowerCase();
-			
-			if(os.contains("windows"))
-			{
-				System.setProperty("webdriver.gecko.driver",ConfigReader.FirefoxDriver);
-				ProfilesIni profile = new ProfilesIni();
-				FirefoxProfile myprofile = profile.getProfile("profileToolsQA"); 
-				myprofile.setPreference("dom.popup_maximum", 0);
-				myprofile.setPreference("privacy.popups.showBrowserMessage", false);
-				//Depricated on Selenium Version greather than v3.12.0
-				//driver = new FirefoxDriver(myprofile);
-			}
-			else if (os.contains("mac")) 
-			{
-				System.setProperty("webdriver.gecko.driver",ConfigReader.FirefoxDriver);
-				FirefoxBinary binary = new FirefoxBinary();
-				File firefoxProfileFolder = new File("/Users/asy/Library/Application Support/Firefox/Profiles/wef58crr.firefoxprofile");
-			    FirefoxProfile profile = new FirefoxProfile(firefoxProfileFolder);
-			  //Depricated on Selenium Version greather than v3.12.0
-			  //driver = new FirefoxDriver(binary, profile);
-			}
-		}
-		driver.manage().timeouts().implicitlyWait(IMPLICIT_TIMEOUT_SECONDS,TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		return driver;
-	}
-
 
 	public static void waitLoading(int i) 
 	{
@@ -154,7 +116,7 @@ public class BaseDriver {
 		
 	}
 	
-	public static WebElement findElement (By by) {
+	public WebElement findElement (By by) {
 		BaseDriver.waitLoading(1);
 		WebElement element = null;
 		int i = 0;
@@ -179,7 +141,11 @@ public class BaseDriver {
 		}
 		
 		return element;
-		
+	}
+	
+	@AfterTest
+	public void exitWebDriver(){
+	driver.quit();	
 	}
 	
 }

@@ -2,7 +2,7 @@ package testRepository;
 
 import org.testng.annotations.Test;
 
-import com.Objects.CommonMethods;
+import com.Objects.HelperMethods;
 import com.Objects.SafelistObjects;
 import com.Pages.SLURLRedirections;
 import com.Pages.SearchLockPages;
@@ -13,31 +13,33 @@ public class Google_LockIcon_SafeSites extends BaseDriver{
 	SLURLRedirections SLurl = new SLURLRedirections();
 	SafelistObjects safelist = new SafelistObjects();
 	SearchLockPages SLPages = new SearchLockPages();
+	HelperMethods helper = new HelperMethods();
 	
+	//priority 1-5
 	
-	@Test(testName="C8152+C8585+C8558_Check SearchLock icon and notification on Google Homepage",priority=1)
+	@Test(priority=1, testName="C8152+C8585+C8558_Check SearchLock icon and notification on Google Homepage")
 	public void SafeList_Google_HomePage() throws Exception
 	{
 		String name = new Object(){}.getClass().getEnclosingMethod().getName();
 		System.out.println("----------------- "+name+" -----------------");
+		driver.get(SLurl.searchlockURL);
 		driver.get(SLurl.googleURL);
 		safelist.SafeListChromeWebRedirection();
 	}
 	
-	@Test(testName="C8333+C8592+C8559_Check SearchLock icon and notification on Google Images page",priority=2)
+	@Test(priority=2, testName="C8333+C8592+C8559_Check SearchLock icon and notification on Google Images page")
 	public void SafeList_Google_Images() throws Exception
 	{
-		CommonMethods.switchTab();
+		helper.switchTab();
 		String name = new Object(){}.getClass().getEnclosingMethod().getName();
 		System.out.println("----------------- "+name+" -----------------");
 		driver.get(SLurl.googleImageURL);
 		safelist.SafeListImageRedirection();
 	}
 	
-	@Test(testName="C8336+C8596+C8808_Check SearchLock icon and notification on Google Images page via Images link", priority=3)
+	@Test(priority=3, testName="C8336+C8596+C8808_Check SearchLock icon and notification on Google Images page via Images link")
 	public void SafeList_Google_ImagesLink() throws Exception
 	{
-		Thread.sleep(5000);
 		String name = new Object(){}.getClass().getEnclosingMethod().getName();
 		System.out.println("----------------- "+name+" -----------------");
 		driver.get(SLurl.googleURL);
@@ -45,7 +47,7 @@ public class Google_LockIcon_SafeSites extends BaseDriver{
 		safelist.SafeListImageRedirection();
 	}
 	
-	@Test(testName="C8727+C8593+C8560_Check SearchLock icon and notification on video.google.com page", priority=4)
+	@Test(priority=4, testName="C8727+C8593+C8560_Check SearchLock icon and notification on video.google.com page")
 	public void SafeList_Google_Videos() throws Exception
 	{
 		String name = new Object(){}.getClass().getEnclosingMethod().getName();
@@ -54,7 +56,7 @@ public class Google_LockIcon_SafeSites extends BaseDriver{
 		safelist.SafeListVideoRedirection();
 	}
 	
-	@Test(testName="C8338+C8594_Check SearchLock icon and notification on google.com/shopping page", priority=5)
+	@Test(priority=5, testName="C8338+C8594_Check SearchLock icon and notification on google.com/shopping page")
 	public void SafeList_Google_Shopping() throws Exception
 	{
 		String name = new Object(){}.getClass().getEnclosingMethod().getName();

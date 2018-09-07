@@ -1,22 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Regression Testing" configfailurepolicy="continue">
+<suite name="Regression Testing" parallel="tests" thread-count="1">
 
-
-	  <test name="SearchLock Safelist Google">
-	    <classes>
-	  	  <class name="testRepository.Google_LockIcon_SafeSites"/> 
-	   
+	  <test name="Searchlock Serp TestCases v1.2.5">
+ 		<parameter name="myBrowser" value="prod_automation_searchlock_v1.2.5.crx"/>
+	     <classes>
+     	  <class name="testRepository.Google_LockIcon_SafeSites"/>   
+		  <class name="testRepository.Bing_LockIcon_SafeSites"/>    
+	  	  <class name="testRepository.Ask_LockIcon_SafeSites"/> 
+	      <class name="testRepository.MyWay_LockIcon_SafeSites"/>   
+	      <class name="testRepository.MyWebSearch_LockIcon_SafeSites"/>  
+      <!--<class name="testRepository.Wow_LockIcon_SafeSites"/>As discussed with Eric, issue on Wow Cannot be fixed that's why we're skipping this test --> 
+	      <class name="testRepository.Msn_LockIcon_SafeSites"/>                
 	    </classes>
-	</test>
-	
-	 <test name="SearchLock Safelist Bing">
-	    <classes>
-    	   <class name="testRepository.Bing_LockIcon_SafeSites"/>  
+	</test>  
+
+	 <test name="Searchlock Serp TestCases v1.0.2">
+		<parameter name="myBrowser" value="prod_automation_searchlock_for_chrome_v1.0.2.crx"/> 
+	     <classes>
+  	   	  <class name="testRepository.Google_LockIcon_SafeSites"/>      
+		  <class name="testRepository.Bing_LockIcon_SafeSites"/>    
+	  	  <class name="testRepository.Ask_LockIcon_SafeSites"/> 
+	      <class name="testRepository.MyWay_LockIcon_SafeSites"/>   
+	      <class name="testRepository.MyWebSearch_LockIcon_SafeSites"/>  
+      <!--<class name="testRepository.Wow_LockIcon_SafeSites"/>  As discussed with Eric, issue on Wow Cannot be fixed that's why we're skipping this test -->
+	      <class name="testRepository.Msn_LockIcon_SafeSites"/>                 
 	    </classes>
 	</test> 
 	
+    <test name="Searchlock Serp TestCases v1.0.3">
+ 		<parameter name="myBrowser" value="prod_automation_searchlock_for_chrome_v1.0.3.crx"/>
+	     <classes>
+     <class name="testRepository.Google_LockIcon_SafeSites"/>       
+	      <class name="testRepository.Bing_LockIcon_SafeSites"/>    
+	      <class name="testRepository.Ask_LockIcon_SafeSites"/> 
+	      <class name="testRepository.MyWay_LockIcon_SafeSites"/>   
+	      <class name="testRepository.MyWebSearch_LockIcon_SafeSites"/>  
+		  <class name="testRepository.Wow_LockIcon_SafeSites"/>  
+	      <class name="testRepository.Msn_LockIcon_SafeSites"/>              
+	    </classes>
+	</test>   
 	
+	 <test name="Searchlock Serp TestCases v1.0.4">
+ 		<parameter name="myBrowser" value="prod_automation_searchlock_for_chrome_v1.0.4.crx"/>
+	     <classes>
+     	  <class name="testRepository.Google_LockIcon_SafeSites"/>       
+	      <class name="testRepository.Bing_LockIcon_SafeSites"/>    
+	      <class name="testRepository.Ask_LockIcon_SafeSites"/> 
+	      <class name="testRepository.MyWay_LockIcon_SafeSites"/>   
+	      <class name="testRepository.MyWebSearch_LockIcon_SafeSites"/>  
+		  <class name="testRepository.Wow_LockIcon_SafeSites"/>  
+	      <class name="testRepository.Msn_LockIcon_SafeSites"/>              
+	    </classes>
+	</test>    
 	
+	  <test name="Searchlock Serp TestCases v1.0.5">
+ 		<parameter name="myBrowser" value="prod_automation_searchlock_for_chrome_v1.0.5.crx"/>
+	     <classes>
+     <class name="testRepository.Google_LockIcon_SafeSites"/>       
+	      <class name="testRepository.Bing_LockIcon_SafeSites"/>    
+	      <class name="testRepository.Ask_LockIcon_SafeSites"/> 
+	      <class name="testRepository.MyWay_LockIcon_SafeSites"/>   
+	      <class name="testRepository.MyWebSearch_LockIcon_SafeSites"/>  
+		  <class name="testRepository.Wow_LockIcon_SafeSites"/>  
+	      <class name="testRepository.Msn_LockIcon_SafeSites"/>              
+	    </classes>
+	</test>   
 	
+	<test name="Searchlock Serp TestCases v1.0.4 France">
+ 		<parameter name="myBrowser" value="prod_automation_searchlock_france_v1.0.4.crx"/>
+	     <classes>
+     	  <class name="testRepository.Google_LockIcon_SafeSites"/>       
+	      <class name="testRepository.Bing_LockIcon_SafeSites"/>    
+	      <class name="testRepository.Ask_LockIcon_SafeSites"/> 
+	      <class name="testRepository.MyWay_LockIcon_SafeSites"/>   
+	      <class name="testRepository.MyWebSearch_LockIcon_SafeSites"/>  
+		  <class name="testRepository.Wow_LockIcon_SafeSites"/>  
+	      <class name="testRepository.Msn_LockIcon_SafeSites"/>              
+	    </classes>
+	</test>     
+	
+	<test name="Searchlock Serp TestCases v1.0.4 India">
+ 		<parameter name="myBrowser" value="prod_automation_searchlock_india_v1.0.4.crx"/>
+	     <classes>
+     	  <class name="testRepository.Google_LockIcon_SafeSites"/>       
+	      <class name="testRepository.Bing_LockIcon_SafeSites"/>    
+	      <class name="testRepository.Ask_LockIcon_SafeSites"/> 
+	      <class name="testRepository.MyWay_LockIcon_SafeSites"/>   
+	      <class name="testRepository.MyWebSearch_LockIcon_SafeSites"/>  
+		  <class name="testRepository.Wow_LockIcon_SafeSites"/>  
+	      <class name="testRepository.Msn_LockIcon_SafeSites"/>              
+	    </classes>
+	</test>              
+
 </suite>

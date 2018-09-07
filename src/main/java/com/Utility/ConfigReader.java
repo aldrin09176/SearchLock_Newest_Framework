@@ -3,9 +3,6 @@ package com.Utility;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Properties;
 
 public class ConfigReader 
@@ -64,28 +61,6 @@ public class ConfigReader
         }   
         return prop.getProperty(field);
         
-    }
-	
-    public static String getExtensionName()
-    {
-    		String extension = null;
-    		System.out.println("Extension Running: " + ConfigReader.getTestExtension());
-    		
-    		if(ConfigReader.getTestExtension().contains("staging"))
-    		{
-    			 extension = System.getProperty("user.dir")
-    	    			    + "/src/main/resources/Extension/staging/" + ConfigReader.getTestExtension() + ".crx";
-    		}
-    		else if(ConfigReader.getTestExtension().contains("prod"))
-    		{
-    			 extension = System.getProperty("user.dir")
- 	    			    + "/src/main/resources/Extension/production/" + ConfigReader.getTestExtension() + ".crx";
-    		}
-    		else
-    		{
-    			System.out.println("Extension Not Found");
-    		}
-		return extension;
     }
     
 	public String getUsername()

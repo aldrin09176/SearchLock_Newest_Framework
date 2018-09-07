@@ -11,12 +11,14 @@ public class MyWay_LockIcon_SafeSites extends BaseDriver{
 	SLURLRedirections SLurl = new SLURLRedirections();
 	SafelistObjects safelist = new SafelistObjects();
 	
-	@Test(priority=1)
+	//priority 13
+	
+	@Test(priority=13)
 	public void SafeList_MyWay_HomePage() throws Exception
 	{
 		String name = new Object(){}.getClass().getEnclosingMethod().getName();
 		System.out.println("----------------- "+name+" -----------------");
-		driver.get(SLurl.myWay);
+		driver.get(SLurl.myWayURL);
 		safelist.SafeListChromeWebRedirection();
 	}
 }
